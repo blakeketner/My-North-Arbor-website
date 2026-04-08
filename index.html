@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <!-- Light blue static background -->
+  <!-- Strong Light Blue Static Background -->
   <style>
+    html, body {
+      background-color: #e0f0ff !important;
+      background-attachment: fixed !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    
+    /* Make sure bubbly elements don't override the main background */
+    .bubble {
+      background-color: rgba(255,255,255,0.1) !important; /* semi-transparent so blue shows through */
+    }
+  </style>
     body {
       background-color: #e0f0ff !important; /* light blue */
       background-attachment: fixed; /* stays static, doesn't scroll */
