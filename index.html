@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="North Arbor Environmental Engineering & Consulting: ISA Certified Arborist Consulting in Michigan for Tree Preservation, Diagnosis, Treatment, Environmental Services, Regenerative Agriculture, and Sustainability.">
-    <meta name="keywords" content="Michigan arborist consultant, tree preservation Michigan, ISA certified arborist, municipal tree consulting, vegetation management Michigan, regenerative agriculture consulting, sustainability consulting Michigan">
-    <title>North Arbor Environmental Engineering & Consulting</title>
-    <style>
-        /* Enhanced bubbly/flowy style: More curves, animations, wave gradients. Blues/greens for calm innovation. */
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #F0F8FF; color: #333; line-height: 1.6; position: relative; overflow-x: hidden; }
-        /* Programmatically generated background: SVG for California cliff-like view with hills/trees */
-        body::before { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, #87CEEB 0%, #F0F8FF 100%); z-index: -1; opacity: 0.8; }
-        body::after { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"><path d="M0 300 Q250 200 500 300 Q750 400 1000 300 L1000 500 L0 500 Z" fill="%2390EE90"/><path d="M0 400 Q300 300 600 400 Q800 350 1000 400 L1000 500 L0 500 Z" fill="%23228B22"/><circle cx="200" cy="250" r="20" fill="%23228B22"/><line x1="200" y1="250" x2="200" y2="200" stroke="%238B4513" stroke-width="5"/><circle cx="700" cy="280" r="25" fill="%23228B22"/><line x1="700" y1="280" x2="700" y2="220" stroke="%238B4513" stroke-width="6"/></svg>'); background-size: cover; background-position: center; z-index: -2; opacity: 0.3; animation: wave 10s infinite ease-in-out; }
-        @keyframes wave { 0% { transform: translateX(0); } 50% { transform: translateX(-5%); } 100% { transform: translateX(0); } }
-        /* Bubbly animations */
-        .bubble { position: absolute; background: rgba(135,206,235,0.3); border-radius: 50%; animation: bubble-float 5s infinite; z-index: -1; }
-        .bubble:nth-child(1) { width: 50px; height: 50px; left: 10%; top: 20%; animation-duration: 6s; }
-        .bubble:nth-child(2) { width: 30px; height: 30px; left: 80%; top: 50%; animation-duration: 4s; }
-        .bubble:nth-child(3) { width: 40px; height: 40px; left: 40%; top: 70%; animation-duration: 5s; }
-        @keyframes bubble-float { 0% { transform: translateY(0); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0); } }
-        header { background: linear-gradient(to bottom, #003366, #87CEEB); color: white; padding: 50px 20px; text-align: center; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; position: relative; overflow: hidden; }
-        header::before { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 50px; background: linear-gradient(to right, #87CEEB, #003366); /* Fixed wave-gradient placeholder */ }
-        header h1 { margin: 0; font-size: 2.5em; animation: fadeIn 1s ease-in; }
-        header p { font-size: 1.2em; }
-        nav { background: linear-gradient(to right, #228B22, #90EE90); padding: 15px; text-align: center; border-radius: 30px; margin: 20px auto; max-width: 1200px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: box-shadow 0.3s; }
-        nav:hover { box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
-        nav a { color: white; margin: 0 25px; text-decoration: none; font-weight: bold; transition: color 0.3s ease, transform 0.3s; }
-        nav a:hover { color: #003366; transform: scale(1.1); }
-        section { padding: 50px 20px; max-width: 1200px; margin: auto; background: rgba(255,255,255,0.9); border-radius: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease, transform 0.3s; animation: fadeIn 1s ease-in; }
-        section:hover { box-shadow: 0 6px 15px rgba(0,0,0,0.15); transform: translateY(-3px); }
-        .container { display: flex; flex-wrap: wrap; justify-content: space-around; }
-        .card { background: white; border: none; border-radius: 25px; padding: 25px; margin: 15px; flex: 1 1 350px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
-        .card:hover { transform: translateY(-5px); }
-        .cta-button { background: linear-gradient(to right, #87CEEB, #003366); color: white; padding: 15px 35px; border: none; border-radius: 50px; font-size: 1.2em; cursor: pointer; margin: 20px 0; display: inline-block; text-decoration: none; transition: background 0.3s ease, box-shadow 0.3s; }
-        .cta-button:hover { background: linear-gradient(to right, #003366, #87CEEB); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        form { max-width: 600px; margin: auto; background: rgba(255,255,255,0.95); padding: 25px; border-radius: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: box-shadow 0.3s; }
-        form:hover { box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
-        input, textarea { width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ddd; border-radius: 15px; transition: border 0.3s ease, box-shadow 0.3s; }
-        input:focus, textarea:focus { border-color: #228B22; box-shadow: 0 0 5px rgba(34,139,34,0.5); }
-        button { background: linear-gradient(to right, #228B22, #90EE90); color: white; padding: 12px; border: none; border-radius: 15px; cursor: pointer; width: 100%; font-size: 1.1em; transition: background 0.3s ease, transform 0.3s; }
-        button:hover { background: linear-gradient(to right, #90EE90, #228B22); transform: scale(1.02); }
-        .experience-list { column-count: 2; list-style-type: none; padding: 0; }
-        .experience-list li { margin-bottom: 12px; }
-        footer { background: linear-gradient(to bottom, #003366, #228B22); color: white; text-align: center; padding: 25px; border-top-left-radius: 50px; border-top-right-radius: 50px; position: relative; overflow: hidden; }
-        footer::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 50px; background: linear-gradient(to right, #87CEEB, #003366); /* Fixed wave-gradient placeholder */ transform: rotate(180deg); }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        @media (max-width: 768px) { .container { flex-direction: column; } nav a { display: block; margin: 12px 0; } .experience-list { column-count: 1; } }
-        /* Image placeholders with flowy borders */
-        .section-image { width: 100%; max-width: 600px; margin: 20px auto; border-radius: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
-        .section-image:hover { transform: scale(1.05); }
-    </style>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary SEO -->
+  <title>North Arbor Environmental Engineering & Consulting | ISA Certified Arborist & Landscaping Michigan</title>
+  <meta name="description" content="ISA Certified Arborist and environmental engineering in Michigan. Expert tree diagnosis, vegetation management, landscaping, hardscaping, stream restoration, remediation, regenerative agriculture & sustainability consulting. Call (248) 941-1513 today for 24/7 service.">
+  <meta name="keywords" content="ISA Certified Arborist Michigan, landscaping Michigan, hardscaping Michigan, tree landscaping, vegetation management MI, environmental engineering Michigan, tree diagnosis, stream restoration, regenerative agriculture, sustainability consulting">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://northarboreng.com/">
+
+  <!-- Open Graph (for Facebook, LinkedIn, etc. sharing) -->
+  <meta property="og:title" content="North Arbor Environmental Engineering & Consulting | ISA Certified Arborist & Landscaping Michigan">
+  <meta property="og:description" content="Professional tree care, landscaping, hardscaping, and environmental consulting across Michigan. Call (248) 941-1513.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://northarboreng.com/">
+  <meta property="og:image" content="https://northarboreng.com/og-image.jpg"> <!-- Upload a nice photo of your landscaping/tree work and update this URL later -->
+  <meta property="og:site_name" content="North Arbor Environmental Engineering & Consulting">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="North Arbor Environmental Engineering & Consulting | ISA Certified Arborist & Landscaping Michigan">
+  <meta name="twitter:description" content="Tree care, landscaping, hardscaping & environmental services in Michigan. Call (248) 941-1513.">
+  <meta name="twitter:image" content="https://northarboreng.com/og-image.jpg">
+
+  <!-- Structured Data / Schema (File 4) - Helps Google show rich results with your phone number and services -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "North Arbor Environmental Engineering & Consulting",
+    "description": "ISA Certified Arborist offering tree care, landscaping, hardscaping, vegetation management, remediation, stream restoration, regenerative agriculture and sustainability consulting across Michigan.",
+    "url": "https://northarboreng.com/",
+    "telephone": "+1-248-941-1513",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Harrison",
+      "addressRegion": "MI",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Michigan"
+    },
+    "serviceType": ["Tree Diagnosis and Treatment", "Landscaping", "Hardscaping", "Vegetation Management", "Environmental Engineering", "Stream Restoration", "Remediation", "Regenerative Agriculture Consulting", "Sustainability Consulting"],
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
 </head>
 <body>
     <!-- Bubbly background elements -->
